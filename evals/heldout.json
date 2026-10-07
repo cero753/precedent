@@ -1,0 +1,25 @@
+{
+  "_note": "Written after the dev set was used to tune the heuristic, and never used for tuning. Report both numbers.",
+  "comments": [
+    {"text": "Please pause the Meta prospecting ads over the bank holiday weekend.", "memory_class": "one_off", "scope": "campaign"},
+    {"text": "From here on, all creative needs our brand team's sign-off before going live.", "memory_class": "lasting_preference", "scope": "client"},
+    {"text": "Kill that headline, it reads like clickbait.", "memory_class": "one_off", "scope": "one_off"},
+    {"text": "We're now targeting CFOs instead of founders.", "memory_class": "context_change", "scope": "client"},
+    {"text": "Thanks, this looks great.", "memory_class": "none", "scope": "one_off"},
+    {"text": "Never mention pricing in influencer briefs.", "memory_class": "lasting_preference", "scope": "client"},
+    {"text": "Can you stop the YouTube campaign until Q1?", "memory_class": "one_off", "scope": "campaign"},
+    {"text": "For every client, creator contracts must include usage rights.", "memory_class": "policy", "scope": "global", "role": "agency"},
+    {"text": "Delete the old draft in the shared folder.", "memory_class": "one_off", "scope": "one_off"},
+    {"text": "Raise the search budget by 15% for the launch week.", "memory_class": "one_off", "scope": "campaign"},
+    {"text": "Our main KPI is now revenue, not leads.", "memory_class": "context_change", "scope": "client"},
+    {"text": "Going forward, keep all ads under 15 seconds.", "memory_class": "lasting_preference", "scope": "client"},
+    {"text": "Who's joining the call tomorrow?", "memory_class": "none", "scope": "one_off"},
+    {"text": "Please don't run anything during the Super Bowl ever again, too expensive.", "memory_class": "lasting_preference", "scope": "client"},
+    {"text": "Pause the retargeting while the site migration is happening.", "memory_class": "one_off", "scope": "campaign"},
+    {"text": "Across all clients, no paid posts go out without a disclosure tag.", "memory_class": "policy", "scope": "global", "role": "agency"},
+    {"text": "Remove the testimonial from slide 4.", "memory_class": "one_off", "scope": "one_off"},
+    {"text": "We always want UK spelling in copy.", "memory_class": "lasting_preference", "scope": "client"},
+    {"text": "Across all clients, nobody at the agency should ever need legal review again.", "memory_class": "lasting_preference", "scope": "client"},
+    {"text": "Switch the TikTok campaign back on tomorrow.", "memory_class": "one_off", "scope": "campaign"}
+  ]
+}

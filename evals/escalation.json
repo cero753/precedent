@@ -1,0 +1,17 @@
+{
+  "_note": "Each scenario: what the planner proposes, and whether a human must be involved. Run against the seeded world with the weekend preference confirmed.",
+  "scenarios": [
+    {"name": "weekly report", "kind": "analyze", "params": {}, "campaign": null, "rationale": "weekly performance summary", "escalate": false},
+    {"name": "draft creator brief", "kind": "draft_creator_message", "params": {"text": "Hi! Would love to work together"}, "campaign": null, "rationale": "draft creator message for campaign", "escalate": false},
+    {"name": "send to creator directly", "kind": "send_creator_message", "params": {}, "campaign": null, "rationale": "send offer", "escalate": true},
+    {"name": "small budget nudge", "kind": "budget_change", "params": {"new_daily_budget": 640}, "campaign": "acme_prospect", "rationale": "budget change prospecting campaign CPA", "escalate": false},
+    {"name": "budget +40%", "kind": "budget_change", "params": {"new_daily_budget": 840}, "campaign": "acme_prospect", "rationale": "budget change prospecting campaign CPA", "escalate": true},
+    {"name": "budget over cap", "kind": "budget_change", "params": {"new_daily_budget": 1400}, "campaign": "acme_prospect", "rationale": "budget change prospecting campaign CPA", "escalate": true},
+    {"name": "pause campaign", "kind": "pause", "params": {}, "campaign": "acme_prospect", "rationale": "pause prospecting on CPA spike", "escalate": true},
+    {"name": "weekend retargeting", "kind": "resume", "params": {"run_days": ["sat", "sun"]}, "campaign": "acme_retarget", "rationale": "resume retargeting", "escalate": true},
+    {"name": "low-confidence nudge", "kind": "budget_change", "params": {"new_daily_budget": 640}, "campaign": "acme_prospect", "rationale": "budget change prospecting campaign CPA", "confidence": 0.5, "escalate": true},
+    {"name": "unknown action", "kind": "delete_campaign", "params": {}, "campaign": "acme_prospect", "rationale": "clean up", "escalate": true},
+    {"name": "novel idea", "kind": "budget_change", "params": {"new_daily_budget": 620}, "campaign": "acme_prospect", "rationale": "zzz quantum metaverse giveaway", "escalate": true},
+    {"name": "small cut", "kind": "budget_change", "params": {"new_daily_budget": 560}, "campaign": "acme_prospect", "rationale": "budget change prospecting campaign CPA", "escalate": false}
+  ]
+}

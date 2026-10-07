@@ -1,0 +1,207 @@
+{
+ "comments": [
+  {
+   "text": "Stop campaign A for now. The creative feels off-brand.",
+   "memory_class": "one_off",
+   "scope": "campaign"
+  },
+  {
+   "text": "Going forward, please never run retargeting on weekends for us.",
+   "memory_class": "lasting_preference",
+   "scope": "client"
+  },
+  {
+   "text": "Pause search until the pricing page is fixed.",
+   "memory_class": "one_off",
+   "scope": "campaign"
+  },
+  {
+   "text": "delete this",
+   "memory_class": "one_off",
+   "scope": "one_off"
+  },
+  {
+   "text": "Rule for all our accounts: no influencer whitelisting without legal review.",
+   "memory_class": "policy",
+   "scope": "global",
+   "role": "agency"
+  },
+  {
+   "text": "From now on our target is companies with 200+ employees, not SMBs.",
+   "memory_class": "context_change",
+   "scope": "client"
+  },
+  {
+   "text": "Can you kill the TikTok ads today? Legal flagged the claim in the voiceover.",
+   "memory_class": "one_off",
+   "scope": "campaign"
+  },
+  {
+   "text": "We always want founder-led creative, it outperforms UGC for us.",
+   "memory_class": "lasting_preference",
+   "scope": "client"
+  },
+  {
+   "text": "Remove the second paragraph from the brief.",
+   "memory_class": "one_off",
+   "scope": "one_off"
+  },
+  {
+   "text": "Please don't use the word 'cheap' in any of our ads, ever.",
+   "memory_class": "lasting_preference",
+   "scope": "client"
+  },
+  {
+   "text": "Increase the budget on the search campaign by 10% this week.",
+   "memory_class": "one_off",
+   "scope": "campaign"
+  },
+  {
+   "text": "Our goal is now pipeline, not MQLs.",
+   "memory_class": "context_change",
+   "scope": "client"
+  },
+  {
+   "text": "Love this, thanks team!",
+   "memory_class": "none",
+   "scope": "one_off"
+  },
+  {
+   "text": "Let's not do weekend retargeting again, last time was a disaster.",
+   "memory_class": "lasting_preference",
+   "scope": "client"
+  },
+  {
+   "text": "Across all clients we need two approvals on anything over $5k a day.",
+   "memory_class": "policy",
+   "scope": "global",
+   "role": "agency"
+  },
+  {
+   "text": "Pause the Black Friday ads once the sale ends on Monday.",
+   "memory_class": "one_off",
+   "scope": "campaign"
+  },
+  {
+   "text": "Scrap that draft, I'll send you a new angle.",
+   "memory_class": "one_off",
+   "scope": "one_off"
+  },
+  {
+   "text": "We're shifting to enterprise buyers next quarter.",
+   "memory_class": "context_change",
+   "scope": "client"
+  },
+  {
+   "text": "Never tag competitors in our posts.",
+   "memory_class": "lasting_preference",
+   "scope": "client"
+  },
+  {
+   "text": "Halt the influencer push in Germany, the creator just posted something controversial.",
+   "memory_class": "one_off",
+   "scope": "campaign"
+  },
+  {
+   "text": "Can we get the report by Friday?",
+   "memory_class": "none",
+   "scope": "one_off"
+  },
+  {
+   "text": "Stop campaign A.",
+   "memory_class": "one_off",
+   "scope": "campaign"
+  },
+  {
+   "text": "Lower bids on brand keywords, they're cannibalising organic.",
+   "memory_class": "one_off",
+   "scope": "campaign"
+  },
+  {
+   "text": "Our CEO hates emojis in ad copy, keep them out in future.",
+   "memory_class": "lasting_preference",
+   "scope": "client"
+  },
+  {
+   "text": "Every client report needs CRM numbers, not platform numbers.",
+   "memory_class": "policy",
+   "scope": "global",
+   "role": "agency"
+  },
+  {
+   "text": "Turn the retargeting back on, the new creative is approved.",
+   "memory_class": "one_off",
+   "scope": "campaign"
+  },
+  {
+   "text": "We no longer sell in Canada.",
+   "memory_class": "context_change",
+   "scope": "client"
+  },
+  {
+   "text": "Hold off on posting until we confirm the launch date.",
+   "memory_class": "one_off",
+   "scope": "one_off"
+  },
+  {
+   "text": "No more discount-led messaging for us; it hurts the brand.",
+   "memory_class": "lasting_preference",
+   "scope": "client"
+  },
+  {
+   "text": "Bin the carousel ad.",
+   "memory_class": "one_off",
+   "scope": "one_off"
+  }
+ ],
+ "replies": [
+  {
+   "text": "yes go ahead",
+   "verdict": "approve"
+  },
+  {
+   "text": "Approved 👍",
+   "verdict": "approve"
+  },
+  {
+   "text": "lgtm",
+   "verdict": "approve"
+  },
+  {
+   "text": "no, hold off for now",
+   "verdict": "reject"
+  },
+  {
+   "text": "don't do it",
+   "verdict": "reject"
+  },
+  {
+   "text": "yes but cap it at $500 a day",
+   "verdict": "modify"
+  },
+  {
+   "text": "ok, limit 750",
+   "verdict": "modify"
+  },
+  {
+   "text": "hmm not sure, let's discuss tomorrow",
+   "verdict": "ambiguous"
+  },
+  {
+   "text": "why?",
+   "verdict": "ambiguous"
+  },
+  {
+   "text": "sure, no problem",
+   "verdict": "approve"
+  },
+  {
+   "text": "Not now, waiting on legal",
+   "verdict": "reject"
+  },
+  {
+   "text": "go for it",
+   "verdict": "approve"
+  }
+ ]
+}

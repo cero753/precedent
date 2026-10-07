@@ -1,0 +1,4 @@
+[
+  {"person": "Ana Lopez", "client_id": "brightbank", "role": "client_approver"},
+  {"person": "Omar Reid", "client_id": "*", "role": "agency_lead"}
+]

@@ -1,0 +1,105 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--paper:#F5F6F3;--card:#FFFFFF;--ink:#17212B;--muted:#56636E;--line:#C9D0C8;--accent:#1D6B58;--accent-soft:#E2EEE9;--warn:#A8661A;--warn-soft:#F6EBDD}
+*{box-sizing:border-box}html,body{margin:0}
+body{width:1200px;height:1200px;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",sans-serif;padding:64px 60px;display:flex;flex-direction:column;gap:30px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:20px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:84px;line-height:1;margin:10px 0 12px}
+.sub{font-size:30px;line-height:1.35;color:var(--muted);max-width:1000px}
+.dg{background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:14px}
+svg{width:100%;height:auto;display:block}
+svg text{font-family:"IBM Plex Sans",sans-serif;fill:var(--ink)}
+.sm{font-size:11.5px;fill:var(--muted)}
+.box{fill:var(--card);stroke:var(--line);stroke-width:1.2}.box-a{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.2}.box-w{fill:var(--warn-soft);stroke:var(--warn);stroke-width:1.2}
+.arr{stroke:var(--muted);stroke-width:1.3;fill:none}.arrhead{fill:var(--muted)}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.chip{background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:16px 20px;font-size:23px;line-height:1.3}
+.chip b{color:var(--accent);font-weight:600}
+.foot{margin-top:auto;display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:22px;color:var(--muted)}
+</style></head><body>
+<div><div class="eyebrow">Open source · agentic AI</div><h1>Precedent</h1>
+<div class="sub">Decision memory and guardrails for AI agents that run marketing campaigns. The model decides what to try. Code decides what happens.</div></div>
+<div class="dg"><svg viewBox="0 0 980 470" xmlns="http://www.w3.org/2000/svg">
+    <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="arrhead"/></marker></defs>
+    <!-- sources -->
+    <rect x="20" y="20" width="160" height="200" rx="8" class="box"/>
+    <text x="36" y="46" font-weight="600" font-size="14">Sources</text>
+    <text x="36" y="72" class="sm">Slack threads</text>
+    <text x="36" y="94" class="sm">Client email</text>
+    <text x="36" y="116" class="sm">Meeting transcripts</text>
+    <text x="36" y="138" class="sm">Ad platform APIs</text>
+    <text x="36" y="160" class="sm">CRM</text>
+    <text x="36" y="182" class="sm">Benchmarks, briefs</text>
+    <!-- event store -->
+    <rect x="220" y="20" width="170" height="88" rx="8" class="box-a"/>
+    <text x="236" y="46" font-weight="600" font-size="14">1 · Event Store</text>
+    <text x="236" y="68" class="sm">append-only, per-client key</text>
+    <text x="236" y="88" class="sm">root of all lineage</text>
+    <!-- extraction -->
+    <rect x="220" y="132" width="170" height="88" rx="8" class="box"/>
+    <text x="236" y="158" font-weight="600" font-size="14">2 · Extraction agent</text>
+    <text x="236" y="180" class="sm">typed decision candidates</text>
+    <text x="236" y="200" class="sm">quoted spans, confidence</text>
+    <!-- memory -->
+    <rect x="430" y="20" width="250" height="200" rx="8" class="box"/>
+    <text x="446" y="46" font-weight="600" font-size="14">3 · Memory</text>
+    <rect x="446" y="60" width="218" height="44" rx="6" class="box-a"/>
+    <text x="458" y="80" font-size="13">Decision ledger</text>
+    <text x="458" y="96" class="sm">episodic, bitemporal</text>
+    <rect x="446" y="112" width="218" height="44" rx="6" class="box-a"/>
+    <text x="458" y="132" font-size="13">Preferences and policies</text>
+    <text x="458" y="148" class="sm">scoped, confirmed, supersedes-chain</text>
+    <rect x="446" y="164" width="218" height="44" rx="6" class="box-a"/>
+    <text x="458" y="184" font-size="13">Fact store</text>
+    <text x="458" y="200" class="sm">metrics + source + definition version</text>
+    <!-- truth -->
+    <rect x="720" y="20" width="240" height="88" rx="8" class="box"/>
+    <text x="736" y="46" font-weight="600" font-size="14">4 · Truth resolver</text>
+    <text x="736" y="68" class="sm">metric registry, source precedence</text>
+    <text x="736" y="88" class="sm">as-of views, divergence flags</text>
+    <!-- evaluator -->
+    <rect x="720" y="132" width="240" height="88" rx="8" class="box"/>
+    <text x="736" y="158" font-weight="600" font-size="14">5 · Evaluator</text>
+    <text x="736" y="180" class="sm">process vs outcome, horizons</text>
+    <text x="736" y="200" class="sm">decision-class statistics</text>
+    <!-- planner -->
+    <rect x="430" y="262" width="250" height="80" rx="8" class="box"/>
+    <text x="446" y="288" font-weight="600" font-size="14">6 · Planner agent</text>
+    <text x="446" y="310" class="sm">LLM tool-calling loop: reads memory</text>
+    <text x="446" y="328" class="sm">+ as-of facts, acts only via gateway</text>
+    <!-- gateway -->
+    <rect x="720" y="262" width="240" height="80" rx="8" class="box-w"/>
+    <text x="736" y="288" font-weight="600" font-size="14">7 · Action gateway</text>
+    <text x="736" y="310" class="sm">risk tiers, approvals, rollback</text>
+    <text x="736" y="328" class="sm">policy is code, not prompt</text>
+    <!-- humans -->
+    <rect x="220" y="262" width="170" height="80" rx="8" class="box"/>
+    <text x="236" y="288" font-weight="600" font-size="14">People</text>
+    <text x="236" y="310" class="sm">approve in Slack / email</text>
+    <text x="236" y="328" class="sm">send creator messages</text>
+    <!-- cross cutting -->
+    <rect x="20" y="380" width="940" height="70" rx="8" class="box"/>
+    <text x="36" y="406" font-weight="600" font-size="14">Cross-cutting</text>
+    <text x="36" y="430" class="sm">Lineage graph (deletion is a graph walk) · Eval harness (memory gate, escalation, agent safety) · Audit log (who approved what)</text>
+    <!-- arrows -->
+    <path d="M180 64 H218" class="arr" marker-end="url(#ah)"/>
+    <path d="M305 108 V130" class="arr" marker-end="url(#ah)"/>
+    <path d="M390 176 H428" class="arr" marker-end="url(#ah)"/>
+    <path d="M680 64 H718" class="arr" marker-end="url(#ah)"/>
+    <path d="M840 108 V130" class="arr" marker-end="url(#ah)"/>
+    <path d="M555 220 V260" class="arr" marker-end="url(#ah)"/>
+    <path d="M680 302 H718" class="arr" marker-end="url(#ah)"/>
+    <path d="M720 316 H392" class="arr" marker-end="url(#ah)" stroke-dasharray="4 3"/>
+    <path d="M305 262 V222" class="arr" marker-end="url(#ah)" stroke-dasharray="4 3"/>
+    <path d="M840 220 V260" class="arr" marker-end="url(#ah)" stroke-dasharray="4 3"/>
+    <text x="540" y="360" class="sm">dashed = approval requests and human replies, which re-enter as events</text>
+  </svg></div>
+<div class="chips">
+<div class="chip"><b>Context.</b> Reason, evidence, outcome and cause kept apart</div>
+<div class="chip"><b>Evaluation.</b> Process vs outcome, policies pooled</div>
+<div class="chip"><b>Facts.</b> Bitemporal, versioned, provable deletion</div>
+<div class="chip"><b>Harness.</b> Risk tiers, approvals, rollback</div>
+</div>
+<div class="foot"><span>github.com/cero753/precedent</span><span>36 tests · evals · any LLM API</span></div>
+</body></html>

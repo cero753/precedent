@@ -165,7 +165,7 @@ def run(conn, client_id, task, mode="offline", max_steps=MAX_STEPS, recorded=Non
 
 
 def save_recording(run_out, path=RECORDED):
-    keep = {"model": run_out["model"], "task": run_out["task"], "client_id": run_out["client_id"],
+    keep = {"model": "live LLM", "task": run_out["task"], "client_id": run_out["client_id"],
             "steps": [{"thought": s["thought"], "calls": [{"tool": c["tool"], "args": c["args"]} for c in s["calls"]]}
                       for s in run_out["steps"]]}
     Path(path).write_text(json.dumps(keep, indent=2), encoding="utf-8")

@@ -1,0 +1,102 @@
+{
+  "model": "live LLM",
+  "task": "Weekly optimisation review for Acme Skin. Also prepare outreach for creator @glowwithmia for the October launch.",
+  "client_id": "acme",
+  "steps": [
+    {
+      "thought": "",
+      "calls": [
+        {
+          "tool": "get_campaigns",
+          "args": {
+            "client_id": "acme"
+          }
+        },
+        {
+          "tool": "get_preferences",
+          "args": {
+            "client_id": "acme"
+          }
+        },
+        {
+          "tool": "get_recent_decisions",
+          "args": {
+            "client_id": "acme"
+          }
+        },
+        {
+          "tool": "get_recent_messages",
+          "args": {
+            "client_id": "acme"
+          }
+        },
+        {
+          "tool": "get_policy_evidence",
+          "args": {}
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "calls": [
+        {
+          "tool": "get_metrics",
+          "args": {
+            "campaign_id": "acme_retarget"
+          }
+        },
+        {
+          "tool": "get_metrics",
+          "args": {
+            "campaign_id": "acme_prospect"
+          }
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "calls": [
+        {
+          "tool": "ask_human",
+          "args": {
+            "question": "Priya (Acme) asked on 2026-09-22 to pause acme_retarget with no reason (decision d_e_slk_0922, needs clarification). On 2026-09-02 the reason was off-brand creative, which was relaunched 09-08 with new creative. Is the 09-22 pause about this campaign only, retargeting generally, or a standing rule? Also, please confirm two proposed, unenforced preferences: (1) no retargeting on weekends (p_e_eml_0910), (2) no whitelisting without legal review (p_e_slk_0918). I'm keeping retarget paused and not resuming until you confirm."
+          }
+        },
+        {
+          "tool": "draft_message",
+          "args": {
+            "kind": "draft_creator_message",
+            "to": "@glowwithmia",
+            "text": "Hi Mia, we're the team at Acme Skin and love your content. We're planning an October product launch and would like to explore a paid collaboration with you. Could you share your availability, rates and usage/licensing terms for content creation in October? We'll follow up with a full brief and timeline once we hear from you. Nothing is confirmed until a written agreement is in place. Thanks, [Account manager name], on behalf of Acme Skin",
+            "rationale": "Initial outreach only, to be reviewed and sent by a human. It makes no whitelisting or paid-usage commitment, since a no-whitelisting-without-legal-review policy (p_e_slk_0918) is proposed and not yet confirmed."
+          }
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "calls": [
+        {
+          "tool": "propose_action",
+          "args": {
+            "kind": "recommend",
+            "campaign_id": "acme_prospect",
+            "rationale": "Hold the $600/day budget and make no change. CRM CPA was $39.92 for the last 7 days against $41.45 for the prior 7 (-3.7%), as of 2026-10-06. The target is $35 (ctx_acme_cpa_v2). Source divergence is 0.279 but not flagged, and gap shift is 0.003. CPA is above target but improving, with no spike, so a pause isn't warranted. Pooled evidence says budget increases on strong ROAS hurt CPA (+5.3%, CI 0.6 to 9.9%), so don't scale. Re-check next week.",
+            "confidence": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "calls": [
+        {
+          "tool": "finish",
+          "args": {
+            "summary": "Weekly review for Acme Skin (as of 2026-10-06):\n- **Campaign A (Retargeting):** It stays paused and I proposed nothing. Priya's 09-22 pause request (d_e_slk_0922) has no stated reason, and her earlier off-brand-creative reason was addressed by the 09-08 relaunch. I asked you (q_run_c1ac15_d35f) whether the pause covers this campaign only, retargeting in general, or is a standing rule. I also asked you to confirm two preferences that are only proposed, so not enforced yet: no weekend retargeting, and no whitelisting without legal review. There is no CRM CPA data for it because it is paused.\n- **Campaign B (Prospecting):** CRM CPA is $39.92 over the last 7 days, down from $41.45 (-3.7%) and still above the $35 target. I proposed a \"hold budget, no change\" recommendation (act_0506f071). It is awaiting your approval. Pooled evidence says budget increases hurt CPA, so I'm not scaling.\n- **Creator @glowwithmia:** I drafted initial outreach (act_744527ee) for a human to review and send. It asks about availability, rates and licensing, and makes no whitelisting commitment. Whitelisting should wait for legal review if that policy is confirmed."
+          }
+        }
+      ]
+    }
+  ]
+}
